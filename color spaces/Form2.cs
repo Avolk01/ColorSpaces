@@ -25,9 +25,9 @@ namespace color_spaces
         {           
             for (int i = 0; i < 256; i++)
             {
-                greyscale1Chart.Series[0].Points.AddXY(i, chartsData[0][i]);
-                greyscale2Chart.Series[0].Points.AddXY(i, chartsData[1][i]);
-                diffChart.Series[0].Points.AddXY(i, chartsData[2][i]);
+                chart1.Series[0].Points.AddXY(i, chartsData[0][i]);
+                chart2.Series[0].Points.AddXY(i, chartsData[1][i]);
+                chart3.Series[0].Points.AddXY(i, chartsData[2][i]);
             }
                               
         }

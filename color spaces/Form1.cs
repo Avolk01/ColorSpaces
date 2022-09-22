@@ -18,14 +18,10 @@ namespace color_spaces
     {
         Form2 form2;
         Form2 f;
-        List<int[]> data;
+        List<int[]> data = new List<int[]>();
         public Form1()
         {
-            InitializeComponent();   
-            data = new List<int[]>();
-            form2 = new Form2(data);
-            form2.Width = 1357;
-            form2.Height = 799;
+            InitializeComponent();            
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -33,17 +29,22 @@ namespace color_spaces
 
         }
 
+        private void ClearData()
+        {
+            data.Clear();
+            for (int i = 0; i < 3; i++)            
+                data.Add(new int[256]);                               
+        }
+
         private void drawButton_Click(object sender, EventArgs e)
         {
             panel1.Refresh();
+            ClearData();
             Bitmap mainPicture = new Bitmap(Image.FromFile("test1.png"));            
             Bitmap greyscale1 = new Bitmap(mainPicture);
             Bitmap greyscale2 = new Bitmap(mainPicture);
             Bitmap diff = new Bitmap(mainPicture);
-            int x, y;
-            var greyscaleValues1 = new int[256];
-            var greyscaleValues2 = new int[256];
-            var diffValues = new int[256];            
+            int x, y;           
             for (x = 0; x < mainPicture.Width; x++)
             {
                 for (y = 0; y < mainPicture.Height; y++)
@@ -57,16 +58,13 @@ namespace color_spaces
                     greyscale1.SetPixel(x, y, newColor1); 
                     greyscale2.SetPixel(x, y, newColor1);
 
-                    greyscaleValues1[value1]++;                                         
-                    greyscaleValues2[value2]++;
+                    data[0][value1]++;
+                    data[1][value2]++;
                     var p = diff.GetPixel(x,y);
-                    diffValues[p.R]++;
+                    data[2][p.R]++;
 
                 }
             }
-            data.Add(greyscaleValues1);
-            data.Add(greyscaleValues2);
-            data.Add(diffValues);
             mainPictureBox.Image = mainPicture;
             pictureBox1.Image = greyscale1;
             pictureBox2.Image = greyscale2;
@@ -77,6 +75,7 @@ namespace color_spaces
         private void task2Button_Click(object sender, EventArgs e)
         {
             panel1.Refresh();
+            ClearData();
             Bitmap mainPicture = new Bitmap(Image.FromFile("test.png"));
             Bitmap redPictureBox = new Bitmap(mainPicture);
             Bitmap greenPictureBox = new Bitmap(mainPicture);
@@ -91,8 +90,11 @@ namespace color_spaces
                     arrayOfBitmap[0].SetPixel(x, y, Color.FromArgb(mainPictureColor.A, mainPictureColor.R, 0, 0));
                     arrayOfBitmap[1].SetPixel(x, y, Color.FromArgb(mainPictureColor.A, 0, mainPictureColor.G, 0));
                     arrayOfBitmap[2].SetPixel(x, y, Color.FromArgb(mainPictureColor.A, 0, 0, mainPictureColor.B));
+                    data[0][mainPictureColor.R]++;
+                    data[1][mainPictureColor.G]++;            
+                    data[2][mainPictureColor.B]++;
                 }
-            }
+            }            
             mainPictureBox.Image = mainPicture;
             pictureBox1.Image = arrayOfBitmap[0];
             pictureBox2.Image = arrayOfBitmap[1];
@@ -101,6 +103,9 @@ namespace color_spaces
 
         private void gistButton_Click_1(object sender, EventArgs e)
         {
+            form2 = new Form2(data);
+            form2.Width = 1357;
+            form2.Height = 799;
             form2.ShowDialog();
         }
     }
