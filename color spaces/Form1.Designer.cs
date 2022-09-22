@@ -30,13 +30,15 @@
         {
             this.drawButton = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.greyscaleBox1 = new System.Windows.Forms.PictureBox();
-            this.greyscaleBox2 = new System.Windows.Forms.PictureBox();
             this.mainPictureBox = new System.Windows.Forms.PictureBox();
+            this.greyscaleBox2 = new System.Windows.Forms.PictureBox();
+            this.greyscaleBox1 = new System.Windows.Forms.PictureBox();
+            this.differenceImage = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.greyscaleBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.greyscaleBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.mainPictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.greyscaleBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.greyscaleBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.differenceImage)).BeginInit();
             this.SuspendLayout();
             // 
             // drawButton
@@ -52,6 +54,7 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.differenceImage);
             this.panel1.Controls.Add(this.mainPictureBox);
             this.panel1.Controls.Add(this.greyscaleBox2);
             this.panel1.Controls.Add(this.greyscaleBox1);
@@ -60,13 +63,13 @@
             this.panel1.Size = new System.Drawing.Size(1052, 702);
             this.panel1.TabIndex = 1;
             // 
-            // greyscaleBox1
+            // mainPictureBox
             // 
-            this.greyscaleBox1.Location = new System.Drawing.Point(12, 12);
-            this.greyscaleBox1.Name = "greyscaleBox1";
-            this.greyscaleBox1.Size = new System.Drawing.Size(484, 312);
-            this.greyscaleBox1.TabIndex = 0;
-            this.greyscaleBox1.TabStop = false;
+            this.mainPictureBox.Location = new System.Drawing.Point(12, 377);
+            this.mainPictureBox.Name = "mainPictureBox";
+            this.mainPictureBox.Size = new System.Drawing.Size(484, 312);
+            this.mainPictureBox.TabIndex = 2;
+            this.mainPictureBox.TabStop = false;
             // 
             // greyscaleBox2
             // 
@@ -76,13 +79,21 @@
             this.greyscaleBox2.TabIndex = 1;
             this.greyscaleBox2.TabStop = false;
             // 
-            // mainPictureBox
+            // greyscaleBox1
             // 
-            this.mainPictureBox.Location = new System.Drawing.Point(284, 377);
-            this.mainPictureBox.Name = "mainPictureBox";
-            this.mainPictureBox.Size = new System.Drawing.Size(484, 312);
-            this.mainPictureBox.TabIndex = 2;
-            this.mainPictureBox.TabStop = false;
+            this.greyscaleBox1.Location = new System.Drawing.Point(12, 12);
+            this.greyscaleBox1.Name = "greyscaleBox1";
+            this.greyscaleBox1.Size = new System.Drawing.Size(484, 312);
+            this.greyscaleBox1.TabIndex = 0;
+            this.greyscaleBox1.TabStop = false;
+            // 
+            // differenceImage
+            // 
+            this.differenceImage.Location = new System.Drawing.Point(559, 377);
+            this.differenceImage.Name = "differenceImage";
+            this.differenceImage.Size = new System.Drawing.Size(484, 312);
+            this.differenceImage.TabIndex = 3;
+            this.differenceImage.TabStop = false;
             // 
             // Form1
             // 
@@ -95,9 +106,10 @@
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.greyscaleBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.greyscaleBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.mainPictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.greyscaleBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.greyscaleBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.differenceImage)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -109,6 +121,7 @@
         private System.Windows.Forms.PictureBox mainPictureBox;
         private System.Windows.Forms.PictureBox greyscaleBox2;
         private System.Windows.Forms.PictureBox greyscaleBox1;
+        private System.Windows.Forms.PictureBox differenceImage;
     }
 }
 
