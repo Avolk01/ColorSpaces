@@ -116,7 +116,7 @@
             this.Controls.Add(this.chart2);
             this.Controls.Add(this.chart1);
             this.Name = "Form2";
-            this.Text = "Form2";
+            this.Text = "Гистограммы";
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart3)).EndInit();

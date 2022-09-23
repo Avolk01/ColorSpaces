@@ -17,7 +17,8 @@ namespace color_spaces
     public partial class Form1 : Form
     {
         Form2 form2;
-        Form2 f;
+        Form3 form3;
+
         List<int[]> data = new List<int[]>();
         public Form1()
         {
@@ -107,6 +108,15 @@ namespace color_spaces
             form2.Width = 1357;
             form2.Height = 799;
             form2.ShowDialog();
+        }  
+       
+        private void task3Button_Click(object sender, EventArgs e)
+        {
+            Bitmap mainPicture = new Bitmap(Image.FromFile("test1.png"));
+            form3 = new Form3(mainPicture);
+            form3.Width = 816;
+            form3.Height = 489;
+            form3.ShowDialog();                        
         }
     }
 }
