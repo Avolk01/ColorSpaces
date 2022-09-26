@@ -1,0 +1,13 @@
+C:\Users\AVolk\Desktop\Практика по си шарпу\color spaces\color spaces\bin\Debug\color spaces.exe.config
+C:\Users\AVolk\Desktop\Практика по си шарпу\color spaces\color spaces\bin\Debug\color spaces.exe
+C:\Users\AVolk\Desktop\Практика по си шарпу\color spaces\color spaces\bin\Debug\color spaces.pdb
+C:\Users\AVolk\Desktop\Практика по си шарпу\color spaces\color spaces\obj\Debug\color spaces.csproj.AssemblyReference.cache
+C:\Users\AVolk\Desktop\Практика по си шарпу\color spaces\color spaces\obj\Debug\color spaces.csproj.SuggestedBindingRedirects.cache
+C:\Users\AVolk\Desktop\Практика по си шарпу\color spaces\color spaces\obj\Debug\color_spaces.Form1.resources
+C:\Users\AVolk\Desktop\Практика по си шарпу\color spaces\color spaces\obj\Debug\color_spaces.Properties.Resources.resources
+C:\Users\AVolk\Desktop\Практика по си шарпу\color spaces\color spaces\obj\Debug\color spaces.csproj.GenerateResource.cache
+C:\Users\AVolk\Desktop\Практика по си шарпу\color spaces\color spaces\obj\Debug\color spaces.csproj.CoreCompileInputs.cache
+C:\Users\AVolk\Desktop\Практика по си шарпу\color spaces\color spaces\obj\Debug\color spaces.exe
+C:\Users\AVolk\Desktop\Практика по си шарпу\color spaces\color spaces\obj\Debug\color spaces.pdb
+C:\Users\AVolk\Desktop\Практика по си шарпу\color spaces\color spaces\obj\Debug\color_spaces.Form2.resources
+C:\Users\AVolk\Desktop\Практика по си шарпу\color spaces\color spaces\obj\Debug\color_spaces.Form3.resources
