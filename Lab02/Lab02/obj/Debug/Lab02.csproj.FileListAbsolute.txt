@@ -1,0 +1,11 @@
+C:\Users\AVolk\Desktop\Юфу\Компьютерная графика\Lab02\Lab02\bin\Debug\Lab02.exe.config
+C:\Users\AVolk\Desktop\Юфу\Компьютерная графика\Lab02\Lab02\bin\Debug\Lab02.exe
+C:\Users\AVolk\Desktop\Юфу\Компьютерная графика\Lab02\Lab02\bin\Debug\Lab02.pdb
+C:\Users\AVolk\Desktop\Юфу\Компьютерная графика\Lab02\Lab02\obj\Debug\Lab02.csproj.AssemblyReference.cache
+C:\Users\AVolk\Desktop\Юфу\Компьютерная графика\Lab02\Lab02\obj\Debug\Lab02.csproj.SuggestedBindingRedirects.cache
+C:\Users\AVolk\Desktop\Юфу\Компьютерная графика\Lab02\Lab02\obj\Debug\Lab02.Form1.resources
+C:\Users\AVolk\Desktop\Юфу\Компьютерная графика\Lab02\Lab02\obj\Debug\Lab02.Properties.Resources.resources
+C:\Users\AVolk\Desktop\Юфу\Компьютерная графика\Lab02\Lab02\obj\Debug\Lab02.csproj.GenerateResource.cache
+C:\Users\AVolk\Desktop\Юфу\Компьютерная графика\Lab02\Lab02\obj\Debug\Lab02.csproj.CoreCompileInputs.cache
+C:\Users\AVolk\Desktop\Юфу\Компьютерная графика\Lab02\Lab02\obj\Debug\Lab02.exe
+C:\Users\AVolk\Desktop\Юфу\Компьютерная графика\Lab02\Lab02\obj\Debug\Lab02.pdb
