@@ -40,6 +40,9 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.borderButton = new System.Windows.Forms.Button();
             this.lineButton = new System.Windows.Forms.Button();
+            this.WUlineButton = new System.Windows.Forms.Button();
+            this.triangleButton = new System.Windows.Forms.Button();
+            this.magicButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
@@ -81,8 +84,8 @@
             // 
             // refreshButton
             // 
-            this.refreshButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.refreshButton.Location = new System.Drawing.Point(528, 170);
+            this.refreshButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.refreshButton.Location = new System.Drawing.Point(528, 489);
             this.refreshButton.Name = "refreshButton";
             this.refreshButton.Size = new System.Drawing.Size(75, 23);
             this.refreshButton.TabIndex = 5;
@@ -110,11 +113,11 @@
             this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label1.Location = new System.Drawing.Point(557, 67);
+            this.label1.Location = new System.Drawing.Point(527, 67);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(25, 13);
+            this.label1.Size = new System.Drawing.Size(76, 13);
             this.label1.TabIndex = 7;
-            this.label1.Text = "      ";
+            this.label1.Text = "                       ";
             // 
             // pictureBox2
             // 
@@ -147,11 +150,47 @@
             this.lineButton.UseVisualStyleBackColor = true;
             this.lineButton.Click += new System.EventHandler(this.lineButton_Click);
             // 
+            // WUlineButton
+            // 
+            this.WUlineButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.WUlineButton.Location = new System.Drawing.Point(528, 170);
+            this.WUlineButton.Name = "WUlineButton";
+            this.WUlineButton.Size = new System.Drawing.Size(75, 23);
+            this.WUlineButton.TabIndex = 11;
+            this.WUlineButton.Text = "WUline";
+            this.WUlineButton.UseVisualStyleBackColor = true;
+            this.WUlineButton.Click += new System.EventHandler(this.WUlineButton_Click);
+            // 
+            // triangleButton
+            // 
+            this.triangleButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.triangleButton.Location = new System.Drawing.Point(528, 199);
+            this.triangleButton.Name = "triangleButton";
+            this.triangleButton.Size = new System.Drawing.Size(75, 23);
+            this.triangleButton.TabIndex = 12;
+            this.triangleButton.Text = "Triangle";
+            this.triangleButton.UseVisualStyleBackColor = true;
+            this.triangleButton.Click += new System.EventHandler(this.triangleButton_Click);
+            // 
+            // magicButton
+            // 
+            this.magicButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.magicButton.Location = new System.Drawing.Point(528, 228);
+            this.magicButton.Name = "magicButton";
+            this.magicButton.Size = new System.Drawing.Size(75, 23);
+            this.magicButton.TabIndex = 13;
+            this.magicButton.Text = "Magic";
+            this.magicButton.UseVisualStyleBackColor = true;
+            this.magicButton.Click += new System.EventHandler(this.magicButton_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(615, 532);
+            this.Controls.Add(this.magicButton);
+            this.Controls.Add(this.triangleButton);
+            this.Controls.Add(this.WUlineButton);
             this.Controls.Add(this.lineButton);
             this.Controls.Add(this.borderButton);
             this.Controls.Add(this.pictureBox2);
@@ -184,6 +223,9 @@
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Button borderButton;
         private System.Windows.Forms.Button lineButton;
+        private System.Windows.Forms.Button WUlineButton;
+        private System.Windows.Forms.Button triangleButton;
+        private System.Windows.Forms.Button magicButton;
     }
 }
 
