@@ -1,0 +1,14 @@
+C:\Users\AVolk\Desktop\Юфу\Компьютерная графика\Lab04\Lab04\bin\Debug\Lab04.exe.config
+C:\Users\AVolk\Desktop\Юфу\Компьютерная графика\Lab04\Lab04\bin\Debug\Lab04.exe
+C:\Users\AVolk\Desktop\Юфу\Компьютерная графика\Lab04\Lab04\bin\Debug\Lab04.pdb
+C:\Users\AVolk\Desktop\Юфу\Компьютерная графика\Lab04\Lab04\obj\Debug\Lab04.csproj.AssemblyReference.cache
+C:\Users\AVolk\Desktop\Юфу\Компьютерная графика\Lab04\Lab04\obj\Debug\Lab04.csproj.SuggestedBindingRedirects.cache
+C:\Users\AVolk\Desktop\Юфу\Компьютерная графика\Lab04\Lab04\obj\Debug\Lab04.Form1.resources
+C:\Users\AVolk\Desktop\Юфу\Компьютерная графика\Lab04\Lab04\obj\Debug\Lab04.Properties.Resources.resources
+C:\Users\AVolk\Desktop\Юфу\Компьютерная графика\Lab04\Lab04\obj\Debug\Lab04.csproj.GenerateResource.cache
+C:\Users\AVolk\Desktop\Юфу\Компьютерная графика\Lab04\Lab04\obj\Debug\Lab04.csproj.CoreCompileInputs.cache
+C:\Users\AVolk\Desktop\Юфу\Компьютерная графика\Lab04\Lab04\obj\Debug\Lab04.exe
+C:\Users\AVolk\Desktop\Юфу\Компьютерная графика\Lab04\Lab04\obj\Debug\Lab04.pdb
+C:\Users\AVolk\Desktop\Юфу\Компьютерная графика\Lab04\Lab04\obj\Debug\Lab04.Form2.resources
+C:\Users\AVolk\Desktop\Юфу\Компьютерная графика\Lab04\Lab04\obj\Debug\Lab04.Form3.resources
+C:\Users\AVolk\Desktop\Юфу\Компьютерная графика\Lab04\Lab04\obj\Debug\Lab04.Form4.resources
