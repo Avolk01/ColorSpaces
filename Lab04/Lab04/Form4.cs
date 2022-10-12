@@ -33,6 +33,7 @@ namespace Lab04
 
 
         private bool isPressed = false;
+        private bool newPoint = false;
         private Point cur;
         private int check = -1;
 
@@ -44,12 +45,16 @@ namespace Lab04
 
         private void pictureBox1_MouseMove_1(object sender, MouseEventArgs e)
         {
-            if (isPressed)
+            if (isPressed && !newPoint)
             {
                 cur = e.Location;
+                var rb = new RadioButton();
                 if (check != -1)
+                {
                     pictureBox1.Controls[check].Location = cur;
-                pictureBox1.Invalidate();
+                    rb = pictureBox1.Controls[check] as RadioButton;
+                    points[int.Parse(rb.Text.Substring(1, rb.Text.Length-1)) - 1] = cur;
+                }                             
             }
             Redraw();
             pictureBox1.Invalidate();
@@ -80,7 +85,7 @@ namespace Lab04
         {
             isPressed = true;
             check = FindSelectedRB();
-            cur = e.Location;
+            cur = e.Location;           
         }
         
         private void pictureBox1_MouseClick(object sender, MouseEventArgs e)
@@ -110,7 +115,7 @@ namespace Lab04
             res.Show();
         }
 
-        private bool newPoint = false;
+       
         private void addPointButton_Click(object sender, EventArgs e)
         {            
             Cursor = !newPoint ?  Cursors.Hand : Cursors.Default;
@@ -231,6 +236,13 @@ namespace Lab04
             g = Graphics.FromImage(pictureBox1.Image);
             g.Clear(Color.White);
             pictureBox1.Refresh();
+        }                
+
+        private void addPointButton_KeyDown(object sender, KeyEventArgs e)
+        {
+            count++;
+            var text = "P" + (count);
+            CreateNewPoint(Cursor.Position, text);
         }
     }
 }

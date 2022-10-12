@@ -80,6 +80,7 @@
             this.drawTreeButton.TabIndex = 3;
             this.drawTreeButton.Text = "Draw Tree";
             this.drawTreeButton.UseVisualStyleBackColor = true;
+            this.drawTreeButton.Click += new System.EventHandler(this.drawTreeButton_Click);
             // 
             // label1
             // 

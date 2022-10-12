@@ -24,15 +24,19 @@ namespace Lab04
 
         private void drawFractalButton_Click(object sender, EventArgs e)
         {
+            x1 = pictureBox1.Width *2 / 3;
+            y1 = pictureBox1.Height/4;
             g.Clear(Color.White);
             string res = seks(C);
             drawFractalButton.Text = res;
             if(scaledSize>3)
                 scaledSize /= 1.5;
-            Risovat(res, x1, y1, startAngle, scaledSize);
+            Risovat(res, x1, y1, startAngle, scaledSize*3, false, false, 1, Color.Black);
             C++;
             pictureBox1.Invalidate();
         }
+
+
         Graphics g;
         double scaledSize = 60;
         double rotateAngle = 0;
@@ -44,11 +48,14 @@ namespace Lab04
         int C = 0;
         string filename;
 
-        private void Risovat(string seks, double x1, double y1, double angle, double size)
-        {     
+        private void Risovat(string seks, double x1, double y1, double angle, double size, bool flag, bool branch, int penSize, Color penColor)
+        {
+            if (penSize < 1)
+                penSize = 1;
             g = Graphics.FromImage(pictureBox1.Image);
             var rnd = new Random();
-            Pen pen = new Pen(Color.Black, 1);
+            var r = 0.0;            
+            Pen pen = new Pen(penColor, penSize);
             double x2 = 0;
             double y2 = 0;
             Stack<Point> stack = new Stack<Point>();
@@ -56,9 +63,11 @@ namespace Lab04
             Point p2 = new Point((int)x2, (int)y2);            
             for (int i = 0; i < seks.Length; i++)
             {
+                if (flag && branch)
+                    r = -22 + rnd.Next(45);
                 char x = seks[i];
-                x2 = (x1 + Math.Cos(angle * Math.PI / 180) * size);
-                y2 = (y1 + Math.Sin(angle * Math.PI / 180) * size);
+                x2 = (x1 + Math.Cos((angle + r) * Math.PI / 180) * size);
+                y2 = (y1 + Math.Sin((angle + r) * Math.PI / 180) * size);
                 if (x == 'F')
                 {
                     p1 = new Point((int)x1, (int)y1);
@@ -89,8 +98,16 @@ namespace Lab04
                             kaef--;
                         right++;
                     }
-                    var temp = seks.Substring(left+1, right - left-2);                                     
-                    Risovat(temp, x1, y1, angle, size);
+                    var temp = seks.Substring(left+1, right - left-2);
+                    var red = (int)(penColor.R * 0.95);
+                    var green = (int)(penColor.G * 1.05);
+                    var blue = (int)(penColor.B);
+                    if (red < 0)
+                        red = 0;
+                    if(green > 255)
+                        green = 255;
+                    penColor = Color.FromArgb(red, green, blue);
+                    Risovat(temp, x1, y1, angle, size, flag, true, penSize - 1, penColor);
                     i = right-1;
                 }
                 angle %= 360;
@@ -156,7 +173,21 @@ namespace Lab04
         {
             openFileDialog1.ShowDialog();
             filename = openFileDialog1.FileName;
-            //C = 0;
+            C = 0;
+        }
+
+        private void drawTreeButton_Click(object sender, EventArgs e)
+        {
+            x1 = pictureBox1.Width/2;
+            y1 = pictureBox1.Height - 1;
+            g.Clear(Color.White);
+            string res = seks(C);
+            drawFractalButton.Text = res;
+            if (scaledSize > 3)
+                scaledSize /= 1.5;
+            Risovat(res, x1, y1, startAngle, scaledSize, true, false, 5, Color.FromArgb(150, 75, 0));
+            C++;
+            pictureBox1.Invalidate();
         }
     }
 }

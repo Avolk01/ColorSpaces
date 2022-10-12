@@ -60,6 +60,7 @@
             this.addPointButton.Text = "Add Point";
             this.addPointButton.UseVisualStyleBackColor = true;
             this.addPointButton.Click += new System.EventHandler(this.addPointButton_Click);
+            this.addPointButton.KeyDown += new System.Windows.Forms.KeyEventHandler(this.addPointButton_KeyDown);
             // 
             // deleteButton
             // 
