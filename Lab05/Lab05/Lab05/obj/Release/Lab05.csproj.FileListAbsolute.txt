@@ -1,0 +1,11 @@
+C:\Users\AVolk\Desktop\Юфу\Компьютерная графика\Lab05\Lab05\bin\Release\Lab05.exe.config
+C:\Users\AVolk\Desktop\Юфу\Компьютерная графика\Lab05\Lab05\bin\Release\Lab05.exe
+C:\Users\AVolk\Desktop\Юфу\Компьютерная графика\Lab05\Lab05\bin\Release\Lab05.pdb
+C:\Users\AVolk\Desktop\Юфу\Компьютерная графика\Lab05\Lab05\obj\Release\Lab05.csproj.AssemblyReference.cache
+C:\Users\AVolk\Desktop\Юфу\Компьютерная графика\Lab05\Lab05\obj\Release\Lab05.csproj.SuggestedBindingRedirects.cache
+C:\Users\AVolk\Desktop\Юфу\Компьютерная графика\Lab05\Lab05\obj\Release\Lab05.Form1.resources
+C:\Users\AVolk\Desktop\Юфу\Компьютерная графика\Lab05\Lab05\obj\Release\Lab05.Properties.Resources.resources
+C:\Users\AVolk\Desktop\Юфу\Компьютерная графика\Lab05\Lab05\obj\Release\Lab05.csproj.GenerateResource.cache
+C:\Users\AVolk\Desktop\Юфу\Компьютерная графика\Lab05\Lab05\obj\Release\Lab05.csproj.CoreCompileInputs.cache
+C:\Users\AVolk\Desktop\Юфу\Компьютерная графика\Lab05\Lab05\obj\Release\Lab05.exe
+C:\Users\AVolk\Desktop\Юфу\Компьютерная графика\Lab05\Lab05\obj\Release\Lab05.pdb
