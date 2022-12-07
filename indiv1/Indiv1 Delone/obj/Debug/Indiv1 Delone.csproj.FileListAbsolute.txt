@@ -1,0 +1,11 @@
+C:\Users\AVolk\Desktop\Юфу\Компьютерная графика\Indiv1 Delone\Indiv1 Delone\bin\Debug\Indiv1 Delone.exe.config
+C:\Users\AVolk\Desktop\Юфу\Компьютерная графика\Indiv1 Delone\Indiv1 Delone\bin\Debug\Indiv1 Delone.exe
+C:\Users\AVolk\Desktop\Юфу\Компьютерная графика\Indiv1 Delone\Indiv1 Delone\bin\Debug\Indiv1 Delone.pdb
+C:\Users\AVolk\Desktop\Юфу\Компьютерная графика\Indiv1 Delone\Indiv1 Delone\obj\Debug\Indiv1 Delone.csproj.AssemblyReference.cache
+C:\Users\AVolk\Desktop\Юфу\Компьютерная графика\Indiv1 Delone\Indiv1 Delone\obj\Debug\Indiv1 Delone.csproj.SuggestedBindingRedirects.cache
+C:\Users\AVolk\Desktop\Юфу\Компьютерная графика\Indiv1 Delone\Indiv1 Delone\obj\Debug\Indiv1_Delone.Form1.resources
+C:\Users\AVolk\Desktop\Юфу\Компьютерная графика\Indiv1 Delone\Indiv1 Delone\obj\Debug\Indiv1_Delone.Properties.Resources.resources
+C:\Users\AVolk\Desktop\Юфу\Компьютерная графика\Indiv1 Delone\Indiv1 Delone\obj\Debug\Indiv1 Delone.csproj.GenerateResource.cache
+C:\Users\AVolk\Desktop\Юфу\Компьютерная графика\Indiv1 Delone\Indiv1 Delone\obj\Debug\Indiv1 Delone.csproj.CoreCompileInputs.cache
+C:\Users\AVolk\Desktop\Юфу\Компьютерная графика\Indiv1 Delone\Indiv1 Delone\obj\Debug\Indiv1 Delone.exe
+C:\Users\AVolk\Desktop\Юфу\Компьютерная графика\Indiv1 Delone\Indiv1 Delone\obj\Debug\Indiv1 Delone.pdb
